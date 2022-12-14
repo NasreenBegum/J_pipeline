@@ -1,28 +1,17 @@
-pipeline{
-agent any{
-stages{
-stage('Validate'){
-step{
-echo'iam validating'
-}
-}
-stage('compile'){
-step{
-echo'iam compiling'
-}
-}
-stage('code'){
-step{
-echo'iam coding'
-}
-}
-stage('deploy'){
-step{
-echo'iam deploying'
-}
-}
-}
-}
-}
+pipeline {
+    agent any
 
-
+    stages {
+        stage('Hello')
+        }
+        {
+        stage('validate')
+        }
+        {
+        stage('compile'){
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
