@@ -5,7 +5,7 @@ pipeline {
         stage('Hello')
         }
         {
-        stage('validate')
+        stage('validate') 
         }
         {
         stage('compile'){
